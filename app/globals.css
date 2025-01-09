@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+}
+table{
+  border-radius: 12px;
+}
+ th , td {
+  padding: 24px;
+}
+input{
+  background: transparent;
+  padding: 12px 2px;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 24px;
+}
+input::placeholder{
+  color: #aaa;
+}
+input:focus{
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
