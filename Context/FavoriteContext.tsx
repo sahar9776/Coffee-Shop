@@ -25,15 +25,14 @@ function FavoriteProvider({ children }: { children: ReactNode }) {
               (FilterItem) => FilterItem.id !== productInfo.id
             )
           : { ...item }
-      );
+      ) as TFavorite[];
       setFavoriteList(newFavoriteList);
     } else {
       const newFavoriteList = [
         ...favoriteList,
         { ...productInfo, favoriteFlage: true },
-      ];
+      ] as TFavorite[];
       setFavoriteList(newFavoriteList);
-      
     }
   };
 
