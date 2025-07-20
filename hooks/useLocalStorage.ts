@@ -1,8 +1,10 @@
+'use client'
+
 import { useEffect, useState } from "react";
 
 export function useLocalStorage<T>(key: string, initialValue: T | (() => T)) {
   const [value, setValue] = useState<T>(() => {
-    // value 
+    // value
     const jsonValue = localStorage.getItem(key);
 
     // setValue
@@ -17,7 +19,7 @@ export function useLocalStorage<T>(key: string, initialValue: T | (() => T)) {
     }
   });
 
-//   save in localStorage 
+  //   save in localStorage
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
