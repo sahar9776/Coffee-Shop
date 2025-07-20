@@ -33,6 +33,7 @@ function FavoriteProvider({ children }: { children: ReactNode }) {
         { ...productInfo, favoriteFlage: true },
       ];
       setFavoriteList(newFavoriteList);
+      
     }
   };
 
