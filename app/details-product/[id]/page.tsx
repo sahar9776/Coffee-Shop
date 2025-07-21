@@ -1,7 +1,7 @@
 "use client";
 
 import { CartContext } from "@/Context/CartContext";
-import { ProductList } from "@/Static/ProductList";
+import { ProductList } from "@/Static/data";
 import { TProduct } from "@/Types/Types";
 import Image from "next/image";
 import { useParams } from "next/navigation";

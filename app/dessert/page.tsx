@@ -1,6 +1,6 @@
 import DessertPageBanner from "@/Components/DessertPageBanner";
 import ProductItem from "@/Components/ProductItem";
-import { ProductList } from "@/Static/ProductList";
+import { ProductList } from "@/Static/data";
 
 function Dessert() {
   const Dessertslist = ProductList.filter((item) => item.category == "dessert");

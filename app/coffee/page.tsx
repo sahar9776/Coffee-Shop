@@ -1,6 +1,6 @@
 import CoffeePageBanner from "@/Components/CoffeePageBanner";
 import ProductItem from "@/Components/ProductItem";
-import { ProductList } from "@/Static/ProductList";
+import { ProductList } from "@/Static/data";
 
 function CoffeePage() {
   const Coffees = ProductList.filter((item) => item.category == "coffee");

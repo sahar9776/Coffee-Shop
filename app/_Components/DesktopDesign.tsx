@@ -1,24 +1,17 @@
 import background from "@/public/images/DesktopBg.jpg";
 import Image from "next/image";
-import { Links } from "@/Static/Links";
 import LinkItem from "./LinkItem";
-import Link from "next/link";
+import { Links } from "@/Static/data";
 
 function DesktopDesign() {
   return (
-    <div className="max-w-full">
-      <Image
-        src={background}
-        alt="Desktop Background"
-        quality={100}
-        fill
-        unoptimized
-        className="min-w-full min-h-full"
-      />
+    <div className="max-w-screen max-h-screen overflow-hidden">
+        <Image
+          src={background}
+          alt="Desktop Background"
+          className="min-w-full min-h-full"
+        />
 
-      <Link href="/" className="text-white z-50">
-        Coffee
-      </Link>
       <div className="w-[25%] min-h-full bg-[#684b37b4] absolute top-0 right-0 flex flex-col items-center justify-center">
         <div className="flex items-start justify-around -mt-10 md:flex-col md:justify-center md:gap-10">
           {/* OFF setion  */}

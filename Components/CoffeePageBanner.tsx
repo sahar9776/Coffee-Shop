@@ -1,7 +1,7 @@
 import Image from "next/image";
 import background from "@/public/images/mobileBg.jpg";
 import { BiSolidDownload } from "react-icons/bi";
-import { CoffeeBenefitList } from "@/Static/CoffeeBenefitList";
+import { CoffeeBenefitList } from "@/Static/data";
 
 function CoffeePageBanner() {
   return (

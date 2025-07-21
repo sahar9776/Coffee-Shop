@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/images/logo.png";
-import { Links } from "@/Static/Links";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Links } from "@/Static/data";
 
 function Navbar() {
   const pathname = usePathname();

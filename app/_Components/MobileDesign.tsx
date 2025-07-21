@@ -1,7 +1,7 @@
 import background from "@/public/images/mobileBg.jpg";
-import { Links } from "@/Static/Links";
 import Image from "next/image";
 import LinkItem from "./LinkItem";
+import { Links } from "@/Static/data";
 
 function MobileDesign() {
   return (
